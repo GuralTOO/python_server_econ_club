@@ -7,14 +7,16 @@ from decouple import config
 
 dotenv.load_dotenv()
 openai.api_key = config("OPENAI_API_KEY")
+OPEN_API_KEY = os.getenv('OPENAI_API_KEY')
 
+print("opening weaviate")
 
 WEAVIATE_URL = "http://157.230.62.148:8080/"
 
 client = weaviate.Client(
     url=WEAVIATE_URL,  # Replace with your endpoint
     additional_headers={
-        "X-OpenAI-Api-Key": os.environ["OPENAI_API_KEY"],
+        "X-OpenAI-Api-Key": OPEN_API_KEY,
     }
 )
 

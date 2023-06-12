@@ -2,6 +2,8 @@ from flask import Flask
 from flask_socketio import SocketIO, send
 from old_school_retrieval import get_answer_stream
 
+print("starting server daddy")
+
 app = Flask(__name__)
 app.config['SECRET_KEY'] = 'mysecret'
 socketio = SocketIO(app, cors_allowed_origins="*", async_mode='threading')

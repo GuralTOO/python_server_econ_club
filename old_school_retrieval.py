@@ -9,7 +9,7 @@ dotenv.load_dotenv()
 openai.api_key = config("OPENAI_API_KEY")
 
 
-WEAVIATE_URL = "http://localhost:8080/"
+WEAVIATE_URL = "http://157.230.62.148:8080/"
 
 client = weaviate.Client(
     url=WEAVIATE_URL,  # Replace with your endpoint

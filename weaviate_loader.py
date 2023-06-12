@@ -9,14 +9,14 @@ import io
 import requests
 import my_mongodb
 
-# dotenv.load_dotenv()
-# client = weaviate.Client(
-#     url="http://172.22.48.1:8080/",  # Replace with your endpoint
-#     additional_headers={
-#         "X-OpenAI-Api-Key": os.environ["OPENAI_API_KEY"],
+dotenv.load_dotenv()
+client = weaviate.Client(
+    url="http://157.230.62.148:8080/",  # Replace with your endpoint
+    additional_headers={
+        "X-OpenAI-Api-Key": os.environ["OPENAI_API_KEY"],
 
-#     }
-# )
+    }
+)
 
 # classes = client.schema.get().get("classes")
 

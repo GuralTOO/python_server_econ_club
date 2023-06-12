@@ -12,3 +12,4 @@ python-dotenv
 Requests
 weaviate_client
 grpcio
+eventlet

@@ -11,4 +11,4 @@ python-decouple
 python-dotenv
 Requests
 weaviate_client
-grpc
+grpcio

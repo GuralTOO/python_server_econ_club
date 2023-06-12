@@ -12,4 +12,4 @@ python-dotenv
 Requests
 weaviate_client
 grpcio
-eventlet
+eventlet==0.24.1

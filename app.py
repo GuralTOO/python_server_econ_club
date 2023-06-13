@@ -19,7 +19,7 @@ def process_text():
     return jsonify({"message": response_text})
 
 
-app.run()
+app.run(debug=False)
 
 
 # from flask import Flask
